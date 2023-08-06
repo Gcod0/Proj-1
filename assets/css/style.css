@@ -1,0 +1,30 @@
+/* align about me work and contact me paragrapghs to left side of the screen */
+h1 {
+    margin-top: 0;
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 50px;
+
+}
+
+ p {
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* align nav bar to right */
+.topnav {
+  overflow: hidden;
+  text-align: right;
+}
+
+/* center footer */
+.footer {
+  text-align: center;
+}
+
+
+
