@@ -1,30 +1,83 @@
-/* align about me work and contact me paragrapghs to left side of the screen */
-h1 {
-    margin-top: 0;
-    text-align: left;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 50px;
-
-}
-
- p {
-    text-align: left;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 20px;
-}
-
-/* align nav bar to right */
-.topnav {
-  overflow: hidden;
-  text-align: right;
-}
-
-/* center footer */
-.footer {
-  text-align: center;
-}
-
-
-
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    margin: 0;
+  }
+  
+  header {
+    padding: 60px;
+    text-align: center;
+    background: #13293d;
+    color: #fff;
+  }
+  
+  nav {
+    display: flex;
+    background-color: #7fd89e;
+  }
+  
+  nav p {
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  main {
+    display: flex;
+  }
+  
+  aside {
+    flex: 30%;
+    background-color: #b9c6ae;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  section {
+    flex: 70%;
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  footer {
+    padding: 20px;
+    text-align: center;
+    background: #13293d;
+    color: #fff;
+  }
+  
+  .sample-img {
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
+  }
+  
+  img{
+    width: 100%;
+  }
+  
+  /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+  
+  /* Tablets - header changes color */
+  @media screen and (max-width: 992px) {
+    header {
+      background: #040921;
+    }
+  }
+  
+  /* Large smartphones - navbar changes color */
+  @media screen and (max-width: 768px) {
+    nav {
+      background-color: #ede7e7;
+    }
+  }
+  
+  /* Small smartphones - image placeholders change color */
+  @media screen and (max-width: 576px) {
+    .sample-img {
+      background-color: #8ac4ff;
+    }
+  }
+  
